@@ -16,6 +16,46 @@ const Index = () => {
 
       {/* Main Content */}
       <main className="container mx-auto p-6">
+        {/* Featured News Article */}
+        <section className="mb-12">
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white rounded-lg border shadow-sm overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1532375810709-75b1da00537c"
+                alt="Seniors reacting to news"
+                className="w-full h-[300px] object-cover"
+              />
+              <div className="p-6">
+                <div className="flex items-center text-sm text-gray-500 space-x-4 mb-4">
+                  <span>{new Date().toLocaleDateString('pl-PL', { day: '2-digit', month: 'long' })}</span>
+                  <div className="flex items-center space-x-1">
+                    <i className="fas fa-fire text-red-500"></i>
+                    <span>74754</span>
+                  </div>
+                  <div className="flex items-center space-x-1">
+                    <i className="fas fa-comment"></i>
+                    <span>77</span>
+                  </div>
+                </div>
+                
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                  To już nastąpiło! ZUS zawiesił wypłaty emerytur seniorów
+                </h2>
+                
+                <p className="text-gray-600 mb-6">
+                  W środa ZUS ma zaktualizować dopuszczalne limity, od których zależy czy dorabiający emeryci dostaną pełną emeryturę, czy też ta zostanie pomniejszona. W przypadku przekroczenia limitów możliwe jest nawet całkowite zawieszenie wypłat świadczeń z ZUS.
+                </p>
+                
+                <button 
+                  className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-md transition-colors"
+                >
+                  Czytaj więcej
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Latest News Section */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-[#1B3C73]">Najnowsze Wiadomości</h2>
