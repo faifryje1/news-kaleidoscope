@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
@@ -46,11 +48,12 @@ const Index = () => {
                   W środa ZUS ma zaktualizować dopuszczalne limity, od których zależy czy dorabiający emeryci dostaną pełną emeryturę, czy też ta zostanie pomniejszona. W przypadku przekroczenia limitów możliwe jest nawet całkowite zawieszenie wypłat świadczeń z ZUS.
                 </p>
                 
-                <button 
-                  className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-md transition-colors"
+                <Link 
+                  to="/offer"
+                  className="inline-block bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-md transition-colors"
                 >
                   Czytaj więcej
-                </button>
+                </Link>
               </div>
             </div>
           </div>
